@@ -1,19 +1,34 @@
-## Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+# Dictionary Data Structure
+This Java program implements a dictionary data structure for a spell checker. The dictionary supports various operations such as initializing from a string, an empty dictionary, or a text file, adding new words, searching for words, removing words, and finding similar words.
 
-## Folder Structure
+## Class: Dictionary
+### Constructors
+public Dictionary(String s): Initializes the dictionary with a single string.
 
-The workspace contains two folders by default, where:
+public Dictionary(): Initializes an empty dictionary.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+public Dictionary(File f): Initializes the dictionary from a text file containing words.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+### Methods
+public void addWord(String s) throws WordAlreadyExistsException: Adds a new word to the dictionary.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+public boolean findWord(String s): Searches for a word in the dictionary.
 
-## Dependency Management
+public void deleteWord(String s) throws WordNotFoundException: Removes a word from the dictionary.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
-"# Dictionary_Data_Structure" 
+public String[] findSimilar(String s): Searches for words that are similar to the given word.
+
+### Main Method (for Testing)
+The class includes a main method for testing the dictionary functionality. The testing operations include:
+
+- Loading the dictionary from a file.
+- Finding a word in the dictionary.
+- Adding new words to the dictionary.
+- Removing words from the dictionary.
+- Searching for similar words to a given word.
+- Saving the updated dictionary as a text file.
+
+  # Test Cases:
+
+  
