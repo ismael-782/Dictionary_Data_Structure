@@ -1,0 +1,70 @@
+==================================================={ ICS202: Data Structure & Algorithms }================================================
+
+============================================={ Complexity of the Functions In Dectionary File }===========================================
+
+--------------------------------------------------
+|       Method Name         |     Complexity     |
+--------------------------------------------------
+| Initialization(Loading)   | O(nlog(n))         | 
+--------------------------------------------------
+| findWord(Search)          | O(log(n))          |
+--------------------------------------------------
+| addWord(Insertion)        | O(log(n))          |
+--------------------------------------------------
+| deleteWord(Deletion)      | O(log(n))          |
+--------------------------------------------------
+| findSimilar(Similar Words)| O(n*m)             | where (m) is the number of letters in the words and (n) is the number of nodes
+--------------------------------------------------
+|SaveFile                   | O(n)               |
+--------------------------------------------------
+| printElements             | O(log(n))          |
+--------------------------------------------------
+
+========================================================={ Explination }==================================================================
+
+
+1) Initialization (Loading):
+
+The initialization/loading complexity is O(n log(n)).
+This is because the AVL tree is constructed by repeatedly inserting elements, and the insertion operation in AVL trees has a time complexity of O(log(n)). For n insertions, the overall complexity becomes O(n log(n)).
+
+
+2) findWord (Search):
+
+The findWord (search) complexity is O(log(n)).
+In a balanced AVL tree, the search operation has a time complexity of O(log(n)) because the tree's height is logarithmic with respect to the number of nodes.
+
+
+
+3) addWord (Insertion):
+
+The addWord (insertion) complexity is O(log(n)).
+Similar to the search operation, the insertion operation in a balanced AVL tree also has a time complexity of O(log(n)).
+
+
+
+4) deleteWord (Deletion):
+
+The deleteWord (deletion) complexity is O(log(n)).
+Deletion in a balanced AVL tree has a time complexity of O(log(n)) because it involves searching for the element to delete and then performing the deletion operation.
+
+
+
+5) findSimilar (Similar Words):
+
+The findSimilar (similar words) complexity is O(n*m).
+The method involves traversing the AVL tree and checking for similarity, traversing in AVL costs O(n), and since we compare tow words of "m" number of letters in each operation so the complexity overall will be O(n*m).
+
+
+
+6) SaveFile:
+
+The SaveFile complexity is O(n).
+The method calls the printElements method, which performs a simple linear traversal of the AVL tree, resulting in a time complexity of O(n).
+
+
+
+7) printElements:
+
+The printElements complexity is O(log(n)).
+This method performs a simple recursive traversal of the AVL tree, visiting each node once. In a balanced AVL tree, the height is logarithmic, leading to a time complexity of O(log(n)).
