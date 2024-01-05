@@ -30,5 +30,6 @@ The class includes a main method for testing the dictionary functionality. The t
 - Saving the updated dictionary as a text file.
 
   # Test Cases:
+![Screenshot 2024-01-05 040135](https://github.com/ismael-782/Dictionary_Data_Structure/assets/111667195/0dc696ac-83d8-4a06-8c69-6c740c2ff76a)
 
   
